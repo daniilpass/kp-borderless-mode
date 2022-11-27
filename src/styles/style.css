@@ -1,0 +1,37 @@
+.dp-button_change-fit {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.dp-button_change-fit:hover {
+    opacity: 1;
+}
+
+#dp-checkbox_change-fit {
+    display: none;
+}
+
+.dp-ic-widescreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    width: 3.6em;
+    height: 2em;
+    border-radius: 0.5em;
+}
+
+.dp-ic-widescreen__inner {
+    background: white;
+    width: 90%;
+    height: 70%;
+}
+
+#dp-checkbox_change-fit:checked + .dp-ic-widescreen .dp-ic-widescreen__inner{
+    height: 50%;
+}
